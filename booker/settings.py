@@ -69,7 +69,7 @@ CORS_ORIGIN_WHITELIST = (
 )
 
 
-ROOT_URLCONF = 'dj_backend.urls'
+ROOT_URLCONF = 'booker.urls'
 
 TEMPLATE_DIRS = (
     os.path.join(SETTINGS_PATH, 'templates'),
