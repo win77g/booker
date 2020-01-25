@@ -26,6 +26,7 @@ SECRET_KEY = '$%vp&u!q&j5zm6j5rj9mt)=g%-$v6h=#n*7eaj)tm(qidygx$s'
 DEBUG = True
 
 ALLOWED_HOSTS = ['sergbooker.pythonanywhere.com']
+# ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -65,7 +66,7 @@ MIDDLEWARE = [
 CORS_ORIGIN_ALLOW_ALL = True
 # CORS_URLS_REGEX = r'^/api/.*$'
 CORS_ORIGIN_WHITELIST = (
-'http://localhost:4200',
+'http://localhost:4200/',
 )
 
 
@@ -148,8 +149,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, "static")
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES':(
         # 'rest_framework.permissions.IsAdminUser',
-        # 'rest_framework.permissions.AllowAny',
-        'rest_framework.permissions.IsAuthenticated',
+        'rest_framework.permissions.AllowAny',
+        # 'rest_framework.permissions.IsAuthenticated',
     ),
     # 'PAGE_SIZE':10,
 
